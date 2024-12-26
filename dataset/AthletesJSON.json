@@ -1,0 +1,20 @@
+{
+	"name": "AthletesJSON",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Athletes.json",
+				"folderPath": "raw-data",
+				"fileSystem": "tokyo-olympic-2020-data"
+			}
+		},
+		"schema": {}
+	}
+}
